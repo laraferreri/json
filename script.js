@@ -103,18 +103,18 @@ for (var i = 0; i < jsonDatabase.length; i++) {
 function createElementProper(jsonDatabase) {
 
 let newYear = document.createElement("YEAR");
-newContentElement.classList.add('Year');
-newContentElement.innerText = incomingJSON['Year'];
+newYear.classList.add('Year');
+newYear.innerText = incomingJSON['Year'];
 newContentElement.appendChild(newYear);
 
   let newCover = document.createElement("IMG");
-  newContentElement.classList.add('newCover');
-  newContentElement.src = incomingJSON['Newimage'];
+  newCover.classList.add('newCover');
+  newCover.src = incomingJSON['Newimage'];
   newContentElement.appendChild(newCover);
 
   let newName = document.createElement("NAME");
-  newContentElement.classList.add('title');
-  newContentElement.innerText = incomingJSON['title'];
+  newName.classList.add('title');
+  newName.innerText = incomingJSON['title'];
   newContentElement.appendChild(newName);
 
 
