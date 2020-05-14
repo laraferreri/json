@@ -1,31 +1,28 @@
+@font-face {
+font-family: "Vouge";
+src: url(Vogue.ttf);
+}
 
-body {
-  margin: 5vw 10vw 0px 10vw;
-  padding: 0px;
+.body {
   background-color: #eee;
-  font-size: 2rem;
+  font-family: : "Vouge";
 }
 
-body * {
-  box-sizing: border-box;
+.Title{
+  font-size: 40pt;
+  font: Vogue.ttf;
+  text-align: center;
 }
 
-#contentGrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 3vmin;
-  grid-row-gap: 3vmin;
-  padding: 2vmin;
-  font-size: 2rem;
+.Year{
+  font-size: 35pt;
+  text-decoration: underline;
 }
 
-.contentItem {
-  display: flex;
-  flex-direction: column;
-  padding: 2vmin;
-  height: 100%;
+.title{
+  font-size: 25pt;
 }
 
-.contentItem ul {
-  flex-grow: 1;
+.contentGrid img{
+  width: 200px;
 }

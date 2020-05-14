@@ -1,13 +1,8 @@
 let contentGridElement = document.getElementById('contentGrid');
 let jsonDatabase = [
   {
-    "title" : "Linda Eyangelista",
-    "Newimage" : "2001.jpg",
-    "Year" : "2001"
-  },
-  {
     "title" : "Kate Hudson",
-    "Newimage" : "2002.jpg",
+    "Newimage" : "2002.jpg" ,
     "Year" : "2002"
   },
   {
@@ -91,18 +86,25 @@ let jsonDatabase = [
     "Newimage" : "2018.jpg",
     "Year" : "2018"
   },
+  {
+    "title" : "Taylor Swift",
+    "Newimage" : "2019.jpg" ,
+    "Year" : "2019"
+  },
 
 ]
-
-createElementProper(jsonDatabase);
 
 for (var i = 0; i < jsonDatabase.length; i++) {
   createElementProper(jsonDatabase[i]);
 }
 
-function createElementProper(jsonDatabase) {
+function createElementProper(incomingJSON) {
 
-let newYear = document.createElement("YEAR");
+  var newContentElement = document.createElement("DIV");
+  newContentElement.classList.add('contentItem');
+
+
+let newYear = document.createElement("h3");
 newYear.classList.add('Year');
 newYear.innerText = incomingJSON['Year'];
 newContentElement.appendChild(newYear);
@@ -112,7 +114,7 @@ newContentElement.appendChild(newYear);
   newCover.src = incomingJSON['Newimage'];
   newContentElement.appendChild(newCover);
 
-  let newName = document.createElement("NAME");
+  let newName = document.createElement("h3");
   newName.classList.add('title');
   newName.innerText = incomingJSON['title'];
   newContentElement.appendChild(newName);
